@@ -4,12 +4,7 @@ import './index.css';
 import App from './App';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { store } from './app/store'; // Adjust the path to your store if needed
-import disableReactDevtools from '@fvilers/disable-react-devtools'; // Ensure it's a default export
-
-if (process.env.NODE_ENV === 'production') {
-  disableReactDevtools();
-}
+import {store} from './app/store'; // Adjust the path to your store if needed
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
